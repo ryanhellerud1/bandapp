@@ -1,0 +1,14 @@
+</br>
+</br>
+<h1>All My venues!</h1>
+<p>I've got <%= @venues.count %> venues ready to go!</p>
+
+<% @venues.each do |b| %>
+  <ul>
+    <li>
+      <%= link_to venue_path b do %>
+        <strong><%= b.name %>'s venues!</strong>
+      <% end %>
+     
+  </ul>
+<% end %>

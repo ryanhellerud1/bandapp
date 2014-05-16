@@ -1,0 +1,13 @@
+</br>
+</br>
+
+<h1><%= @venue.name %></h1>
+
+<p>Address:<%= @venue.address %></p>
+<p>Date:<%= @venue.date %></p>
+<p>Compensation:<%= @venue.compensation %></p>
+<p>Type of music desired:<%= @venue.typeofmusic %></p>
+
+<%= link_to "Edit your burrito", edit_venue_path(@venue) %>
+<%= link_to 'Delete', @venue, method: :delete %>
+

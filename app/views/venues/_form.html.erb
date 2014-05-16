@@ -1,0 +1,15 @@
+</br>
+<%= form_for @venue do |f| %>
+  Name: <%= f.text_field :name %><br /><br />
+  City <%= f.text_field :address %></br><br />
+  Date <%= f.text_field :date %></br><br />
+  Compensation <%= f.text_field :compensation %></br><br />
+  Type of music desired <%= f.text_field :typeofmusic %></br><br />
+
+  <%# @ingredients.each do |i| %>
+    <%#= check_box_tag :ingredients %>
+    <%#= i.name %>
+  <%# end %>
+  <br />
+  <%= f.submit %>
+<% end %>
